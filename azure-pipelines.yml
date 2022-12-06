@@ -23,7 +23,7 @@ steps:
 
 - task: PublishCucumberReport@1
   inputs:
-    jsonDir: 'Swag_TestDemo/target/cucumber-report'
-    outputPath: 'Swag_TestDemo/target/cucumber-report'
+    jsonDir: 'target/cucumber-report'
+    outputPath: 'target/cucumber-report'
     theme: 'bootstrap'
     reportSuiteAsScenarios: true
