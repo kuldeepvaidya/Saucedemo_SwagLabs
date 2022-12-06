@@ -6,13 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SwaglabsDemo {
     static WebDriver driver;
-
+String BaseUrl = "https://www.saucedemo.com/";
     public void urlPage() {
         System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
 //        Thread.sleep(3000);
         driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com/");
+        driver.get(BaseUrl);
     }
 
     public void login() {
