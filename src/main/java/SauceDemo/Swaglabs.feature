@@ -1,22 +1,22 @@
 
 Feature: SwagLabs
-  @Regression @Smoke @Sanity
+  @Regression @Sanity @Smoke
   Scenario: User able to open url
     Given user should open url
 
-@Regression
+  @Regression
   Scenario: User login
     When user able to login
 
-    @Smoke
+  @Smoke
   Scenario: user buy product
     Given user choose a product
     When user give the details
     Then User should overview order
-   @Sanity
+  @Sanity
   Scenario: user logout
     When User back to homepage
     Then User can logout
-@Regression
+  @Regression
   Scenario: close browser
     Given User able to close the browser
