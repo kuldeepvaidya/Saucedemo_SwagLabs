@@ -3,7 +3,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 public class SwaglabsDemo {
     static WebDriver driver;
 String BaseUrl = "https://www.saucedemo.com/";
@@ -44,7 +43,7 @@ String BaseUrl = "https://www.saucedemo.com/";
     }
 
     public void Overview() {
-        driver.findElement(By.id("finish")).click();
+        driver.findElement(By.id("finis")).click();
     }
 
     public void BackToHome() throws InterruptedException {
@@ -53,7 +52,7 @@ String BaseUrl = "https://www.saucedemo.com/";
     }
 
     public void Logout() throws InterruptedException {
-        driver.findElement(By.id("react-burger-menu-btn")).click();
+        driver.findElement(By.id("react-burger-menu-bt")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("logout_sidebar_link")).click();
     }
